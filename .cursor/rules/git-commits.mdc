@@ -1,0 +1,6 @@
+---
+description: Git-Commit-Regeln für dieses Projekt
+alwaysApply: true
+---
+
+Bei Git-Commits niemals `Co-authored-by: Cursor`, `Made-with: Cursor` oder andere Cursor-Attribution in Commit-Messages einfügen.

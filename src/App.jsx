@@ -1,3 +1,6 @@
+import { instagramHandle, instagramUrl } from "./config.js";
+import InstagramIcon from "./InstagramIcon.jsx";
+
 export default function App() {
   const year = new Date().getFullYear();
 
@@ -15,13 +18,28 @@ export default function App() {
           <p className="lead">
             Entspannt laufen. Gemeinsam dranbleiben. Ohne Leistungsdruck.
           </p>
-          <a className="button" href="mailto:hello@slowrunningclub.de">
-            Mitmachen
-          </a>
         </div>
       </header>
 
       <main className="container">
+        <section className="card card-instagram">
+          <h2>Folge uns auf Instagram</h2>
+          <p>
+            Hier teilen wir Läufe, Termine und Einblicke aus dem Club — der
+            einfachste Weg, auf dem Laufenden zu bleiben.
+          </p>
+          <a
+            className="button button-instagram button-lg"
+            href={instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`@${instagramHandle} auf Instagram`}
+          >
+            <InstagramIcon />
+            <span>{instagramHandle}</span>
+          </a>
+        </section>
+
         <section className="card">
           <h2>Was wir machen</h2>
           <p>
@@ -42,8 +60,18 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <div className="container">
+        <div className="container footer-inner">
           <p>© {year} Slow Running Club</p>
+          <a
+            className="footer-link instagram-link"
+            href={instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`@${instagramHandle} auf Instagram`}
+          >
+            <InstagramIcon />
+            <span>{instagramHandle}</span>
+          </a>
         </div>
       </footer>
     </>

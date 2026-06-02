@@ -55,13 +55,71 @@ h1 {
 
 .lead {
   font-size: 1.15rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   max-width: 40ch;
   color: #99674a;
 }
 
+.button-instagram,
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  line-height: 1;
+}
+
+.button-instagram span,
+.instagram-link span {
+  line-height: 1;
+}
+
+.button-lg {
+  padding: 0.9rem 1.5rem;
+  font-size: 1.05rem;
+}
+
+.button-lg .icon-instagram {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.icon-instagram {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex-shrink: 0;
+  display: block;
+}
+
+.card-instagram {
+  text-align: center;
+  border-color: #e0c4cc;
+  background: linear-gradient(
+    165deg,
+    #faf0f3 0%,
+    var(--card) 55%,
+    #f3e4e9 100%
+  );
+}
+
+.card-instagram h2 {
+  font-size: clamp(1.25rem, 3vw, 1.45rem);
+}
+
+.card-instagram p {
+  margin: 0 auto 1.25rem;
+  max-width: 42ch;
+  color: #99674a;
+}
+
+.card-instagram .button-instagram {
+  margin: 0 auto;
+}
+
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   background: var(--accent);
   color: #fff;
@@ -75,6 +133,40 @@ h1 {
 .button:hover {
   background: var(--accent-hover);
   transform: translateY(-1px);
+}
+
+.footer-inner p {
+  margin: 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+.instagram-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #e0c4cc;
+  background: var(--card);
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.instagram-link:hover {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.instagram-link:hover .icon-instagram {
+  color: #fff;
 }
 
 main {
