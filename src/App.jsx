@@ -45,7 +45,7 @@ export default function App() {
           <p>
             Der Slow Running Club ist für alle, die Bewegung lieben, aber auf
             Tempo und Druck verzichten wollen. Wir laufen in lockerem Rhythmus,
-            feiern Konstanz statt Bestzeiten und motivieren uns gegenseitig.
+            feiern Beständigkeit statt Bestzeiten und motivieren uns gegenseitig.
           </p>
         </section>
 
