@@ -1,4 +1,6 @@
 import {
+  contactEmail,
+  contactName,
   instagramHandle,
   instagramUrl,
   stravaLabel,
@@ -170,6 +172,45 @@ export default function App() {
             <li>Wiedereinsteiger:innen</li>
             <li>Alle, die entspannt in Bewegung bleiben wollen</li>
           </ul>
+        </section>
+
+        <section className="card card-contact">
+          <h2>Kontakt</h2>
+          <p className="contact-intro">
+            Fragen, Mitmachen oder einfach Hallo sagen — wir freuen uns auf dich.
+          </p>
+          <div className="contact-options">
+            <a
+              className="contact-channel"
+              href={instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon />
+              <span>
+                Schreib uns auf Instagram · {instagramHandle}
+              </span>
+            </a>
+            <a
+              className="contact-email"
+              href={`mailto:${contactEmail}`}
+              title={`Schreib ${contactName} eine E-Mail`}
+            >
+              <img
+                className="contact-avatar"
+                src="/anna.png"
+                alt={`${contactName} vom Slow Running Club`}
+                width="80"
+                height="80"
+              />
+              <span className="contact-email-text">
+                <span className="contact-hint">
+                  Schreib {contactName} eine E-Mail
+                </span>
+                <span className="contact-address">{contactEmail}</span>
+              </span>
+            </a>
+          </div>
         </section>
       </main>
 

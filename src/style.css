@@ -371,6 +371,92 @@ li + li {
   margin-top: 0.35rem;
 }
 
+.contact-intro {
+  margin: 0 0 1.25rem;
+  max-width: 50ch;
+  color: #99674a;
+}
+
+.contact-options {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  text-decoration: none;
+  color: inherit;
+  background: #faf0f3;
+  border: 1px solid #ecd8de;
+  border-radius: 0.85rem;
+  transition: border-color 120ms ease, box-shadow 120ms ease,
+    background-color 120ms ease;
+}
+
+.contact-email:hover {
+  border-color: var(--accent);
+  box-shadow: 0 6px 20px rgba(147, 95, 63, 0.1);
+}
+
+.contact-avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  flex-shrink: 0;
+  border: 2px solid #ecd8de;
+}
+
+.contact-email-text {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.contact-hint {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.contact-address {
+  font-size: 0.98rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.contact-channel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.1rem;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  background: #faf0f3;
+  border: 1px solid #ecd8de;
+  border-radius: 0.85rem;
+  line-height: 1;
+  transition: background-color 120ms ease, border-color 120ms ease,
+    color 120ms ease;
+}
+
+.contact-channel span {
+  line-height: 1.35;
+}
+
+.contact-channel:hover {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.contact-channel:hover .icon-instagram {
+  color: #fff;
+}
+
 .footer {
   border-top: 1px solid #e3cdd4;
   padding: 1.1rem 0;
