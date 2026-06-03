@@ -1,5 +1,6 @@
 import { instagramHandle, instagramUrl } from "./config.js";
 import InstagramIcon from "./InstagramIcon.jsx";
+import { runs } from "./runs.js";
 
 export default function App() {
   const year = new Date().getFullYear();
@@ -22,6 +23,54 @@ export default function App() {
       </header>
 
       <main className="container">
+        <section className="card card-runs">
+          <h2>Unsere Läufe</h2>
+          <p className="runs-intro">
+            Zwei feste Termine pro Woche — einfach vorbeikommen, keine Anmeldung
+            nötig.
+          </p>
+          <div className="runs-grid">
+            {runs.map((run) => (
+              <article key={run.id} className="run-card">
+                <h3>{run.title}</h3>
+                <p className="run-day">{run.day}</p>
+                <dl className="run-details">
+                  <div>
+                    <dt>Treffpunkt</dt>
+                    <dd>{run.meetingPoint}</dd>
+                  </div>
+                  <div>
+                    <dt>Strecke</dt>
+                    <dd>{run.distance}</dd>
+                  </div>
+                  {run.groups ? (
+                    <div>
+                      <dt>Gruppen</dt>
+                      <dd>
+                        <ul className="run-groups">
+                          {run.groups.map((group) => (
+                            <li key={group.name}>
+                              <strong>{group.name}</strong>
+                              <span>
+                                {group.time} · {group.pace}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </dd>
+                    </div>
+                  ) : (
+                    <div>
+                      <dt>Pace</dt>
+                      <dd>{run.pace}</dd>
+                    </div>
+                  )}
+                </dl>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="card card-instagram">
           <h2>Folge uns auf Instagram</h2>
           <p>

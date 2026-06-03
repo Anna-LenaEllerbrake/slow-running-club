@@ -169,6 +169,93 @@ h1 {
   color: #fff;
 }
 
+.card-runs h2 {
+  font-size: clamp(1.25rem, 3vw, 1.45rem);
+}
+
+.runs-intro {
+  margin: 0 0 1.25rem;
+  color: #99674a;
+  max-width: 50ch;
+}
+
+.runs-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 700px) {
+  .runs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.run-card {
+  background: #fff;
+  border: 1px solid #ecd8de;
+  border-radius: 0.85rem;
+  padding: 1.15rem 1.2rem;
+}
+
+.run-card h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.run-day {
+  margin: 0 0 1rem;
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.run-details {
+  margin: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.run-details > div {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.run-details dt {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.run-details dd {
+  margin: 0;
+}
+
+.run-groups {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.run-groups li {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.run-groups strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.run-groups span {
+  color: #99674a;
+  font-size: 0.95rem;
+}
+
 main {
   display: grid;
   gap: 1rem;
