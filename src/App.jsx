@@ -103,6 +103,18 @@ export default function App() {
           </div>
         </section>
 
+        <section className="card">
+          <h2>Gemeinsam im Tempo</h2>
+          <p>
+            Wir passen unser Tempo bei Bedarf an und machen auf Wunsch gemeinsam
+            (Geh-)pausen. Niemand soll abgehängt oder zurückgelassen werden.
+          </p>
+          <p>
+            Es ist ausdrücklich erwünscht, zu sagen, wenn du langsamer laufen
+            möchtest oder eine Pause brauchst — sprich uns einfach an.
+          </p>
+        </section>
+
         <section className="card card-social">
           <h2>
             <span className="section-emoji" aria-hidden="true">
