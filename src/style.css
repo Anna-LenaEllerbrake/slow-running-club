@@ -325,24 +325,12 @@ h1 {
 }
 
 .run-groups li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.5rem;
+  display: grid;
+  gap: 0.1rem;
   padding: 0.65rem 0.75rem;
   background: #faf0f3;
   border-radius: 0.65rem;
   border: 1px solid #ecd8de;
-}
-
-.group-emoji {
-  font-size: 1.25rem;
-  line-height: 1.2;
-  flex-shrink: 0;
-}
-
-.run-groups li > div {
-  display: grid;
-  gap: 0.1rem;
 }
 
 .run-groups strong {

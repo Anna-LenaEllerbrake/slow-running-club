@@ -82,15 +82,10 @@ export default function App() {
                         <ul className="run-groups">
                           {run.groups.map((group) => (
                             <li key={group.name}>
-                              <span className="group-emoji" aria-hidden="true">
-                                {group.emoji}
+                              <strong>{group.name}</strong>
+                              <span>
+                                {group.time} · {group.pace}
                               </span>
-                              <div>
-                                <strong>{group.name}</strong>
-                                <span>
-                                  {group.time} · {group.pace}
-                                </span>
-                              </div>
                             </li>
                           ))}
                         </ul>

@@ -21,13 +21,11 @@ export const runs = [
         name: "Easy Pace Group",
         time: "18 Uhr",
         pace: "09:00–09:30 min/km",
-        emoji: "🐢",
       },
       {
         name: "Steady Pace Group",
         time: "19 Uhr",
         pace: "08:00–08:30 min/km",
-        emoji: "🚶",
       },
     ],
   },
