@@ -1,5 +1,11 @@
-import { instagramHandle, instagramUrl } from "./config.js";
+import {
+  instagramHandle,
+  instagramUrl,
+  stravaLabel,
+  stravaUrl,
+} from "./config.js";
 import InstagramIcon from "./InstagramIcon.jsx";
+import StravaIcon from "./StravaIcon.jsx";
 import { runs } from "./runs.js";
 
 export default function App() {
@@ -102,22 +108,43 @@ export default function App() {
           </div>
         </section>
 
-        <section className="card card-instagram">
-          <h2>Folge uns auf Instagram</h2>
+        <section className="card card-social">
+          <h2>
+            <span className="section-emoji" aria-hidden="true">
+              🧡
+            </span>{" "}
+            Community
+          </h2>
           <p>
-            Hier teilen wir Läufe, Termine und Einblicke aus dem Club — der
-            einfachste Weg, auf dem Laufenden zu bleiben.
+            Termine, News und Updates teilen wir immer auf Instagram und im
+            Strava Club — damit niemand etwas verpasst.
           </p>
-          <a
-            className="button button-instagram button-lg"
-            href={instagramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`@${instagramHandle} auf Instagram`}
-          >
-            <InstagramIcon />
-            <span>{instagramHandle}</span>
-          </a>
+          <p className="social-note">
+            Du brauchst kein Strava, um mit uns zu laufen. Instagram reicht
+            völlig — besonders für Laufanfänger:innen.
+          </p>
+          <div className="social-buttons">
+            <a
+              className="button button-social button-lg"
+              href={instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`@${instagramHandle} auf Instagram`}
+            >
+              <InstagramIcon />
+              <span>{instagramHandle}</span>
+            </a>
+            <a
+              className="button button-social button-lg button-strava"
+              href={stravaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${stravaLabel} auf Strava`}
+            >
+              <StravaIcon />
+              <span>{stravaLabel}</span>
+            </a>
+          </div>
         </section>
 
         <section className="card">
@@ -142,16 +169,28 @@ export default function App() {
       <footer className="footer">
         <div className="container footer-inner">
           <p>© {year} Slow Running Club</p>
-          <a
-            className="footer-link instagram-link"
-            href={instagramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`@${instagramHandle} auf Instagram`}
-          >
-            <InstagramIcon />
-            <span>{instagramHandle}</span>
-          </a>
+          <div className="footer-social">
+            <a
+              className="footer-link social-link"
+              href={instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`@${instagramHandle} auf Instagram`}
+            >
+              <InstagramIcon />
+              <span>{instagramHandle}</span>
+            </a>
+            <a
+              className="footer-link social-link social-link-strava"
+              href={stravaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${stravaLabel} auf Strava`}
+            >
+              <StravaIcon />
+              <span>{stravaLabel}</span>
+            </a>
+          </div>
         </div>
       </footer>
     </>
