@@ -24,44 +24,75 @@ export default function App() {
 
       <main className="container">
         <section className="card card-runs">
-          <h2>Unsere Läufe</h2>
+          <h2>
+            <span className="runs-heading-emoji" aria-hidden="true">
+              🏃‍♀️
+            </span>{" "}
+            Unsere Läufe
+          </h2>
           <p className="runs-intro">
             Zwei feste Termine pro Woche — einfach vorbeikommen, keine Anmeldung
-            nötig.
+            nötig. 📍
           </p>
           <div className="runs-grid">
             {runs.map((run) => (
               <article key={run.id} className="run-card">
-                <h3>{run.title}</h3>
-                <p className="run-day">{run.day}</p>
+                <header className="run-card-header">
+                  <h3>{run.title}</h3>
+                  <p className="run-day">📅 {run.day}</p>
+                </header>
+
+                <div className="run-map">
+                  <iframe
+                    title={`Karte: ${run.meetingPoint}`}
+                    src={run.mapsEmbedUrl}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    allowFullScreen
+                  />
+                  <a
+                    className="map-link"
+                    href={run.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    🗺️ In Google Maps öffnen
+                  </a>
+                </div>
+
                 <dl className="run-details">
-                  <div>
-                    <dt>Treffpunkt</dt>
+                  <div className="run-detail-row">
+                    <dt>📍 Treffpunkt</dt>
                     <dd>{run.meetingPoint}</dd>
                   </div>
-                  <div>
-                    <dt>Strecke</dt>
+                  <div className="run-detail-row">
+                    <dt>🛤️ Strecke</dt>
                     <dd>{run.distance}</dd>
                   </div>
                   {run.groups ? (
-                    <div>
-                      <dt>Gruppen</dt>
+                    <div className="run-detail-row">
+                      <dt>⏱️ Gruppen</dt>
                       <dd>
                         <ul className="run-groups">
                           {run.groups.map((group) => (
                             <li key={group.name}>
-                              <strong>{group.name}</strong>
-                              <span>
-                                {group.time} · {group.pace}
+                              <span className="group-emoji" aria-hidden="true">
+                                {group.emoji}
                               </span>
+                              <div>
+                                <strong>{group.name}</strong>
+                                <span>
+                                  {group.time} · {group.pace}
+                                </span>
+                              </div>
                             </li>
                           ))}
                         </ul>
                       </dd>
                     </div>
                   ) : (
-                    <div>
-                      <dt>Pace</dt>
+                    <div className="run-detail-row">
+                      <dt>⏱️ Pace</dt>
                       <dd>{run.pace}</dd>
                     </div>
                   )}
