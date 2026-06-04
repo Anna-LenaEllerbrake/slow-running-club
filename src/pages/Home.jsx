@@ -28,11 +28,17 @@ export default function Home() {
           <p className="lead">
             Locker laufen, gemeinsam dranbleiben — ganz ohne Leistungsdruck.
           </p>
-          <p className="hero-cta">
+          <div className="hero-cta">
             <Link href="/neu-hier" className="button button-lg">
               Zum ersten Mal dabei?
             </Link>
-          </p>
+            <Link
+              href="/was-ist-slow-running"
+              className="button button-outline button-lg"
+            >
+              Was ist Slow Running?
+            </Link>
+          </div>
         </div>
       </header>
 
