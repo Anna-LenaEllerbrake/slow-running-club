@@ -1,3 +1,4 @@
+import { Link } from "preact-router/match";
 import {
   contactEmail,
   contactName,
@@ -6,6 +7,8 @@ import {
   stravaLabel,
   stravaUrl,
 } from "../config.js";
+import FaqList from "../FaqList.jsx";
+import { faqHomePreviewCount } from "../faq.js";
 import InstagramIcon from "../InstagramIcon.jsx";
 import StravaIcon from "../StravaIcon.jsx";
 import { runs } from "../runs.js";
@@ -115,6 +118,20 @@ export default function Home() {
           </p>
         </section>
 
+        <section className="card card-faq" id="faq">
+          <h2>Häufige Fragen</h2>
+          <p className="faq-intro">
+            Die wichtigsten Antworten auf einen Blick — mehr findest du auf der
+            FAQ-Seite.
+          </p>
+          <FaqList limit={faqHomePreviewCount} />
+          <p className="faq-footer">
+            <Link href="/faq" className="faq-footer-link">
+              Alle Fragen ansehen →
+            </Link>
+          </p>
+        </section>
+
         <section className="card card-social">
           <h2>
             <span className="section-emoji" aria-hidden="true">
@@ -172,7 +189,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <section className="card card-contact">
+        <section className="card card-contact" id="kontakt">
           <h2>Kontakt</h2>
           <p className="contact-intro">
             Fragen, Mitmachen oder einfach Hallo sagen — wir freuen uns auf dich.
