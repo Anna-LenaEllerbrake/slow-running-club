@@ -26,7 +26,7 @@ export default function Home() {
           <p className="eyebrow">Karlsruhe</p>
           <h1>Slow Running Club</h1>
           <p className="lead">
-            Entspannt laufen. Gemeinsam dranbleiben. Ohne Leistungsdruck.
+            Locker laufen, gemeinsam dranbleiben — ganz ohne Leistungsdruck.
           </p>
           <p className="hero-cta">
             <Link href="/neu-hier" className="button button-lg">
@@ -45,8 +45,8 @@ export default function Home() {
             Unsere Läufe
           </h2>
           <p className="runs-intro">
-            Zwei feste Termine pro Woche — einfach vorbeikommen, keine Anmeldung
-            nötig. 📍
+            Zwei feste Termine pro Woche — einfach vorbeikommen. Kein Formular,
+            kein Stress. 📍
           </p>
           <div className="runs-grid">
             {runs.map((run) => (
@@ -114,25 +114,25 @@ export default function Home() {
         <section className="card">
           <h2>Gemeinsam im Tempo</h2>
           <p>
-            Wir passen unser Tempo bei Bedarf an und machen auf Wunsch gemeinsam
-            (Geh-)pausen. Niemand soll abgehängt oder zurückgelassen werden.
+            Wir passen das Tempo an und machen gemeinsam Pausen, wenn du magst.
+            Niemand wird abgehängt — wirklich.
           </p>
           <p>
-            Es ist ausdrücklich erwünscht, zu sagen, wenn du langsamer laufen
-            möchtest oder eine Pause brauchst — sprich uns einfach an.
+            Langsamer werden oder Pause? Sag einfach Bescheid — das ist bei uns
+            völlig normal und erwünscht.
           </p>
         </section>
 
         <section className="card card-faq" id="faq">
           <h2>Häufige Fragen</h2>
           <p className="faq-intro">
-            Die wichtigsten Antworten auf einen Blick — mehr findest du auf der
+            Kurze Antworten auf die wichtigsten Fragen — noch mehr auf der
             FAQ-Seite.
           </p>
           <FaqList limit={faqHomePreviewCount} />
           <p className="faq-footer">
             <Link href="/faq" className="faq-footer-link">
-              Alle Fragen ansehen →
+              Alle Fragen →
             </Link>
           </p>
         </section>
@@ -145,12 +145,12 @@ export default function Home() {
             Community
           </h2>
           <p>
-            Termine, News und Updates teilen wir immer auf Instagram und im
-            Strava Club — damit niemand etwas verpasst.
+            Termine, News und spontane Updates gibt's auf Instagram und im
+            Strava Club — so verpasst du nichts.
           </p>
           <p className="social-note">
-            Du brauchst kein Strava, um mit uns zu laufen. Instagram reicht
-            völlig — besonders für Laufanfänger:innen.
+            Du brauchst kein Strava zum Mitlaufen. Instagram reicht völlig —
+            besonders am Anfang.
           </p>
           <div className="social-buttons">
             <a
@@ -179,25 +179,26 @@ export default function Home() {
         <section className="card">
           <h2>Was wir machen</h2>
           <p>
-            Der Slow Running Club ist für alle, die Bewegung lieben, aber auf
-            Tempo und Druck verzichten wollen. Wir laufen in lockerem Rhythmus,
-            feiern Beständigkeit statt Bestzeiten und motivieren uns gegenseitig.
+            Wir sind die Laufgruppe für alle, die Bewegung mögen, aber keinen
+            Speed- und Leistungsdruck wollen. Lockeres Tempo, Beständigkeit statt
+            Bestzeiten — und wir feuern uns gegenseitig an.
           </p>
         </section>
 
         <section className="card">
           <h2>Für wen?</h2>
           <ul>
-            <li>Einsteiger:innen</li>
-            <li>Wiedereinsteiger:innen</li>
-            <li>Alle, die entspannt in Bewegung bleiben wollen</li>
+            <li>Du startest gerade (oder wieder) mit dem Laufen</li>
+            <li>Du willst ohne Druck in Bewegung bleiben</li>
+            <li>Du suchst Leute, die Tempo und Pausen ernst nehmen</li>
           </ul>
         </section>
 
         <section className="card card-contact" id="kontakt">
           <h2>Kontakt</h2>
           <p className="contact-intro">
-            Fragen, Mitmachen oder einfach Hallo sagen — wir freuen uns auf dich.
+            Frage, Mitmach-Wille oder einfach Hallo — wir freuen uns, von dir zu
+            hören.
           </p>
           <div className="contact-options">
             <a
@@ -207,7 +208,7 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <InstagramIcon />
-              <span>Schreib uns auf Instagram · {instagramHandle}</span>
+              <span>Schreib uns auf Insta · {instagramHandle}</span>
             </a>
             <a
               className="contact-email"
@@ -223,7 +224,7 @@ export default function Home() {
               />
               <span className="contact-email-text">
                 <span className="contact-hint">
-                  Schreib {contactName} eine E-Mail
+                  Mail an {contactName}
                 </span>
                 <span className="contact-address">{contactEmail}</span>
               </span>

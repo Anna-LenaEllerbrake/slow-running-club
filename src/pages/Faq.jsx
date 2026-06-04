@@ -40,12 +40,12 @@ export default function Faq() {
       <section className="card">
         <h1>Häufige Fragen</h1>
         <p className="legal-meta">
-          Kurz und knapp — alles Wichtige rund ums Mitlaufen in Karlsruhe.
+          Alles, was du übers Mitlaufen bei uns wissen willst — kurz und ehrlich.
         </p>
         <FaqList items={faqItems} />
         <p className="faq-footer">
-          Noch etwas offen? Schreib uns auf{" "}
-          <Link href="/#kontakt">Instagram oder per E-Mail</Link>.
+          Noch was offen? Meld dich auf{" "}
+          <Link href="/#kontakt">Instagram oder per Mail</Link>.
         </p>
       </section>
     </main>

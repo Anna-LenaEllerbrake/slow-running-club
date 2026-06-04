@@ -5,28 +5,28 @@ import { newcomerConcerns } from "../newcomerConcerns.js";
 import { runs } from "../runs.js";
 
 const runSteps = [
-  "Komm zum Treffpunkt zur angegebenen Uhrzeit — einfach vorbeikommen, ohne Anmeldung.",
-  "Kurzes Hallo: Wir zeigen dir die Gruppe(n) und erklären kurz Strecke und Tempo.",
-  "Gemeinsames Warm-up und Auflockern — kurz in Bewegung kommen, bevor wir loslegen.",
-  "Wir laufen in lockerem Tempo. Auf Wunsch machen wir Pausen — sag einfach Bescheid.",
-  "Unterwegs ist es entspannt: Gespräche ja, Stille auch okay. Niemand muss mithalten um jeden Preis.",
-  "Am Ende optional kurz zusammenstehen — du kannst aber auch einfach gehen, wenn du möchtest.",
-  "Beim Samstags-Long Run enden wir in der Regel an einem Café — wer mag, bleibt dort noch zusammen.",
+  "Zur angegebenen Uhrzeit am Treffpunkt sein — einfach kommen, ohne Anmeldung.",
+  "Kurzes Hallo: Wir zeigen dir die Gruppe(n) und sagen dir kurz, was auf der Strecke auf dich zukommt.",
+  "Gemeinsames Warm-up und Auflockern — kurz in Bewegung kommen, dann geht's los.",
+  "Wir laufen locker. Brauchst du eine Pause? Sag Bescheid — kein Drama.",
+  "Unterwegs ist alles entspannt: Reden, lachen oder einfach laufen. Niemand muss um jeden Preis mithalten.",
+  "Am Ende könnt ihr noch kurz zusammenbleiben — oder du gehst einfach, wenn du willst.",
+  "Beim Samstags-Long Run landen wir meist an einem Café — wer Lust hat, hängt danach noch ein bisschen.",
 ];
 
 const bringItems = [
   "Laufschuhe, in denen du dich wohlfühlst",
-  "Kleidung passend zum Wetter (Schichten helfen)",
-  "Optional: kleine Trinkflasche — Pausen sind möglich",
-  "Gute Laune — mehr brauchst du nicht",
+  "Klamotten fürs Wetter (am besten in Schichten)",
+  "Optional: kleine Trinkflasche — Pausen sind immer möglich",
+  "Gute Laune — mehr brauchst du wirklich nicht",
 ];
 
 const notRequired = [
-  "Schnell zu sein oder eine bestimmte Pace zu halten",
-  "Strava, teure Ausrüstung oder Wettkampferfahrung",
-  "Eine Anmeldung, Mitgliedschaft oder jemanden, den du kennst",
-  "Die ganze Strecke durchzulaufen — Pausen und langsamer werden sind okay",
-  "Sicher zu sein, wie es genau läuft — wir erklären es vor Ort",
+  "Schnell zu sein oder eine feste Pace zu halten",
+  "Strava, teure Ausrüstung oder Wettkampf-Erfahrung",
+  "Anmeldung, Mitgliedschaft oder jemanden, den du schon kennst",
+  "Die ganze Strecke durchzuziehen — Pausen und langsamer werden sind völlig okay",
+  "Alles schon zu wissen — wir erklären es dir vor Ort",
 ];
 
 export default function NeuHier() {
@@ -48,16 +48,16 @@ export default function NeuHier() {
         <p className="new-here-eyebrow">Neu hier?</p>
         <h1>Zum ersten Mal dabei?</h1>
         <p className="legal-meta new-here-lead">
-          Alles Wichtige auf einer Seite — damit du weißt, was dich beim ersten
-          Lauf erwartet. Keine Anmeldung, kein Leistungsdruck.
+          Hier findest du alles Wichtige für deinen ersten Lauf — klar, ehrlich
+          und ohne Druck. Keine Anmeldung nötig.
         </p>
       </section>
 
       <section className="card">
         <h2>So läuft ein Run ab</h2>
         <p>
-          Unsere Läufe sind immer gleich entspannt strukturiert — du musst nichts
-          vorbereiten außer pünktlich da zu sein.
+          Unsere Läufe sind entspannt und immer ähnlich — du musst nur
+          pünktlich da sein, den Rest machen wir gemeinsam.
         </p>
         <ol className="new-here-steps">
           {runSteps.map((step) => (
@@ -68,7 +68,7 @@ export default function NeuHier() {
 
       <section className="card">
         <h2>Wo wir uns treffen</h2>
-        <p>Zwei feste Termine pro Woche — wähl einfach den, der dir passt.</p>
+        <p>Zwei feste Termine pro Woche — nimm einfach den, der dir passt.</p>
         <div className="new-here-meetings">
           {runs.map((run) => (
             <article key={run.id} className="new-here-meeting">
@@ -96,7 +96,7 @@ export default function NeuHier() {
           ))}
         </div>
         <p className="new-here-inline-link">
-          <Link href="/#laeufe">Karten und Details auf der Startseite →</Link>
+          <Link href="/#laeufe">Karten & Details auf der Startseite →</Link>
         </p>
       </section>
 
@@ -108,8 +108,8 @@ export default function NeuHier() {
           ))}
         </ul>
         <p className="new-here-aside">
-          Gut sozialisierte Hunde an der Leine sind willkommen — bitte achte darauf,
-          dass dein Hund die Gruppe nicht stört.
+          Dein Hund darf mit — gut sozialisiert und an der Leine. Achte nur darauf,
+          dass er die Gruppe nicht stört.
         </p>
       </section>
 
@@ -123,19 +123,18 @@ export default function NeuHier() {
       </section>
 
       <section className="card">
-        <h2>Häufige Sorgen von Neulingen</h2>
+        <h2>Was viele sich vor dem ersten Run fragen</h2>
         <p className="new-here-section-intro">
-          Diese Fragen hören wir oft — die Antworten sind ehrlich und ohne
-          Beschönigung.
+          Ehrlich beantwortet — ohne Beschönigung.
         </p>
         <FaqList items={newcomerConcerns} />
       </section>
 
       <section className="card card-new-here-cta">
-        <h2>Bereit für den ersten Lauf?</h2>
+        <h2>Bereit für deinen ersten Lauf?</h2>
         <p>
-          Schau dir die Termine an, komm einfach vorbei — oder schreib uns vorher,
-          wenn du noch unsicher bist.
+          Schau dir die Termine an und komm einfach vorbei — oder schreib uns
+          vorher, wenn du noch Fragen hast.
         </p>
         <div className="new-here-cta-buttons">
           <Link href="/#laeufe" className="button button-lg">
@@ -147,7 +146,7 @@ export default function NeuHier() {
         </div>
         <div className="new-here-cta-after">
           <p>
-            Mehr Antworten in der{" "}
+            Noch mehr Antworten in der{" "}
             <Link href="/faq">FAQ</Link>.
           </p>
         </div>

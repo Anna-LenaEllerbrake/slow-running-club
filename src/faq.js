@@ -6,67 +6,67 @@ export const faqItems = [
     id: "anmeldung",
     question: "Muss ich mich vorher anmelden?",
     answer:
-      "Nein. Du kannst einfach zum Treffpunkt kommen — ohne Anmeldung und ohne Mitgliedschaft. Wenn du unsicher bist, schreib uns vorher gern auf Instagram oder per E-Mail.",
+      "Nein — einfach zum Treffpunkt kommen. Kein Formular, keine Mitgliedschaft. Noch unsicher? Schreib uns vorher gerne auf Instagram oder per Mail.",
   },
   {
     id: "kosten",
     question: "Was kostet die Teilnahme?",
     answer:
-      "Nichts. Der Slow Running Club ist eine offene Laufgruppe — es gibt keinen Beitrag und keine versteckten Gebühren.",
+      "Gar nichts. Wir sind eine offene Laufgruppe — ohne Beitrag und ohne versteckte Kosten.",
   },
   {
     id: "pace",
     question: "Wie schnell lauft ihr?",
     answer:
-      "Bewusst langsam. Montags gibt es zwei Gruppen (ca. 9:00–9:30 und 8:00–8:30 min/km), samstags etwa 8:30–9:30 min/km. Wir passen das Tempo an und machen auf Wunsch Pausen — niemand soll abgehängt werden.",
+      "Bewusst langsam. Montags in zwei Gruppen (ca. 9:00–9:30 und 8:00–8:30 min/km), samstags etwa 8:30–9:30 min/km. Wir passen das Tempo an und machen Pausen, wenn du möchtest — niemand wird abgehängt.",
   },
   {
     id: "strava",
     question: "Brauche ich Strava?",
     answer:
-      "Nein. Strava ist optional für Updates im Club — Instagram reicht völlig, besonders wenn du gerade erst anfängst.",
+      "Nein. Strava ist praktisch für Updates im Club, aber Instagram reicht völlig — besonders, wenn du gerade erst anfängst.",
   },
   {
     id: "level",
     question: "Für wen ist der Club gedacht?",
     answer:
-      "Für Einsteiger:innen, Wiedereinsteiger:innen und alle, die ohne Leistungsdruck laufen wollen. Du musst kein:e erfahrene:r Läufer:in sein.",
+      "Für alle, die entspannt laufen wollen: Einsteiger:innen, Wiedereinsteiger:innen und alle dazwischen. Du musst kein Profi sein.",
   },
   {
     id: "einmal",
     question: "Kann ich auch nur einmal mitlaufen?",
     answer:
-      "Ja, jederzeit. Probier einen Termin aus — wenn es passt, siehst du uns beim nächsten Mal wieder.",
+      "Klar! Probier einfach einen Termin aus — wenn's passt, sehen wir uns beim nächsten Mal wieder.",
   },
   {
     id: "wetter",
     question: "Was passiert bei schlechtem Wetter?",
     answer:
-      "Bei starkem Unwetter oder Ausnahmen informieren wir auf Instagram (und im Strava Club). Schau kurz vor dem Lauf dort nach — dann weißt du, ob wir starten oder den Termin verschieben.",
+      "Bei richtig schlechtem Wetter oder Ausnahmen posten wir auf Instagram (und im Strava Club). Schau kurz vor dem Lauf rein — dann weißt du, ob wir loslegen oder den Termin schieben.",
   },
   {
     id: "mitbringen",
     question: "Was soll ich mitbringen?",
     answer:
-      "Laufschuhe, bequeme Kleidung nach Wetter — und gute Laune. Getränke kannst du vor oder nach dem Lauf mitnehmen; unterwegs machen wir bei Bedarf Pausen.",
+      "Laufschuhe, bequeme Klamotten fürs Wetter — und gute Laune. Getränke kannst du vorher oder nachher mitnehmen; unterwegs pausieren wir bei Bedarf.",
   },
   {
     id: "hunde",
     question: "Sind Hunde erlaubt?",
     answer:
-      "Ja — gut sozialisierte Hunde an der Leine sind willkommen. Bitte achte darauf, dass dein Hund andere Läufer:innen nicht stört und du mit der Gruppe Schritt halten kannst. Bei Unsicherheit schreib uns vorher kurz auf Instagram.",
+      "Ja! Gut sozialisierte Hunde an der Leine sind willkommen. Achte nur darauf, dass dein Hund die anderen nicht stört und du mit der Gruppe mitkommst. Unsicher? Schreib uns vorher kurz auf Instagram.",
   },
   {
     id: "treffpunkt",
     question: "Wo genau ist der Treffpunkt?",
     answer:
-      "Montags an der Günther-Klotz-Anlage beim Bootsverleih zwischen den beiden Seen, samstags vor dem Café Nello. Auf der Startseite findest du Karten und Links zu Google Maps.",
+      "Montags an der Günther-Klotz-Anlage beim Bootsverleih zwischen den beiden Seen, samstags vor dem Café Nello. Karten und Links findest du auf der Startseite.",
   },
   {
     id: "verein",
     question: "Ist das ein Verein?",
     answer:
-      "Nein — wir sind eine informelle Laufgruppe in Karlsruhe, kein eingetragener Verein. Es geht um gemeinsames, entspanntes Laufen ohne Formalitäten.",
+      "Nein — wir sind eine lockere Laufcrew in Karlsruhe, kein Verein. Einfach gemeinsam laufen, ohne Papierkram.",
   },
 ];
 
