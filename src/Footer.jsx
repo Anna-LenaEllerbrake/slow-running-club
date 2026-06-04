@@ -19,6 +19,9 @@ export default function Footer() {
           <Link href="/impressum" className="footer-legal-link">
             Impressum
           </Link>
+          <Link href="/datenschutz" className="footer-legal-link">
+            Datenschutz
+          </Link>
         </div>
         <div className="footer-social">
           <a
