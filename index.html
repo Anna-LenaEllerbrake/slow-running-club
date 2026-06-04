@@ -68,9 +68,21 @@
           {
             "@type": "SportsEvent",
             "name": "Slow Monday Runs",
-            "description": "Montagsläufe in der Günther-Klotz-Anlage, 3,5 km, Easy und Steady Pace.",
+            "description": "Montagsläufe in der Günther-Klotz-Anlage, 3,5 km, Easy Pace (18 Uhr) und Steady Pace (19 Uhr).",
+            "image": "https://slowrunningclub.de/logo.png",
+            "startDate": "2026-06-08T18:00:00+02:00",
+            "endDate": "2026-06-08T19:30:00+02:00",
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
             "eventStatus": "https://schema.org/EventScheduled",
+            "eventSchedule": {
+              "@type": "Schedule",
+              "startDate": "2026-06-08",
+              "endDate": "2027-12-31",
+              "repeatFrequency": "P1W",
+              "byDay": "https://schema.org/Monday",
+              "startTime": "18:00:00",
+              "duration": "PT1H30M"
+            },
             "location": {
               "@type": "Place",
               "name": "Günther-Klotz-Anlage, Bootsverleih",
@@ -78,20 +90,50 @@
                 "@type": "PostalAddress",
                 "addressLocality": "Karlsruhe",
                 "addressCountry": "DE"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 49.000659,
+                "longitude": 8.371768
               }
             },
             "organizer": {
               "@type": "SportsClub",
               "name": "Slow Running Club",
               "url": "https://slowrunningclub.de/"
+            },
+            "performer": {
+              "@type": "SportsTeam",
+              "name": "Slow Running Club",
+              "url": "https://slowrunningclub.de/"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "EUR",
+              "availability": "https://schema.org/InStock",
+              "url": "https://slowrunningclub.de/",
+              "validFrom": "2026-06-08"
             }
           },
           {
             "@type": "SportsEvent",
             "name": "Slow Saturday Long Run",
-            "description": "Samstags-Langlauf ab Café Nello, 8 km, entspanntes Tempo.",
+            "description": "Samstags-Langlauf ab Café Nello, 8 km, entspanntes Tempo (10 Uhr).",
+            "image": "https://slowrunningclub.de/logo.png",
+            "startDate": "2026-06-06T10:00:00+02:00",
+            "endDate": "2026-06-06T12:00:00+02:00",
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
             "eventStatus": "https://schema.org/EventScheduled",
+            "eventSchedule": {
+              "@type": "Schedule",
+              "startDate": "2026-06-06",
+              "endDate": "2027-12-31",
+              "repeatFrequency": "P1W",
+              "byDay": "https://schema.org/Saturday",
+              "startTime": "10:00:00",
+              "duration": "PT2H"
+            },
             "location": {
               "@type": "Place",
               "name": "Café Nello",
@@ -105,6 +147,19 @@
               "@type": "SportsClub",
               "name": "Slow Running Club",
               "url": "https://slowrunningclub.de/"
+            },
+            "performer": {
+              "@type": "SportsTeam",
+              "name": "Slow Running Club",
+              "url": "https://slowrunningclub.de/"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "EUR",
+              "availability": "https://schema.org/InStock",
+              "url": "https://slowrunningclub.de/",
+              "validFrom": "2026-06-06"
             }
           }
         ]
