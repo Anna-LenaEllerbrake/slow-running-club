@@ -16,6 +16,9 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="footer-legal">
           <p>© {year} Slow Running Club</p>
+          <Link href="/neu-hier" className="footer-legal-link">
+            Neu hier?
+          </Link>
           <Link href="/faq" className="footer-legal-link">
             FAQ
           </Link>

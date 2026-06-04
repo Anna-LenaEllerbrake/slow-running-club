@@ -28,11 +28,16 @@ export default function Home() {
           <p className="lead">
             Entspannt laufen. Gemeinsam dranbleiben. Ohne Leistungsdruck.
           </p>
+          <p className="hero-cta">
+            <Link href="/neu-hier" className="button button-lg">
+              Zum ersten Mal dabei?
+            </Link>
+          </p>
         </div>
       </header>
 
       <main className="container">
-        <section className="card card-runs">
+        <section className="card card-runs" id="laeufe">
           <h2>
             <span className="runs-heading-emoji" aria-hidden="true">
               🏃‍♀️

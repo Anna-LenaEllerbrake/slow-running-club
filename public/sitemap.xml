@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://slowrunningclub.de/neu-hier</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://slowrunningclub.de/faq</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

@@ -38,5 +38,7 @@ export const runs = [
     mapsEmbedUrl: mapsEmbed("Café Nello Karlsruhe"),
     distance: "8 km",
     pace: "08:30–09:30 min/km",
+    afterRun:
+      "Endet in der Regel an einem Café — wer mag, bleibt dort noch zusammen. Du kannst aber auch direkt nach dem Lauf gehen.",
   },
 ];

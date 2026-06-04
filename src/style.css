@@ -60,6 +60,22 @@ h1 {
   color: #99674a;
 }
 
+.hero-cta {
+  margin: 1.5rem 0 0;
+}
+
+.button-outline {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  box-shadow: none;
+}
+
+.button-outline:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 .button-social,
 .social-link {
   display: inline-flex;
@@ -307,6 +323,170 @@ h1 {
 
 .faq-footer-link:hover,
 .faq-footer a:hover {
+  text-decoration: underline;
+}
+
+.new-here-page {
+  display: grid;
+  gap: 1rem;
+}
+
+.new-here-eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.card-new-here-intro {
+  border-color: #e0c4cc;
+  background: linear-gradient(
+    165deg,
+    #faf0f3 0%,
+    var(--card) 55%,
+    #f3e4e9 100%
+  );
+}
+
+.new-here-lead {
+  margin-bottom: 0;
+}
+
+.new-here-page .card h2 {
+  margin-top: 0;
+}
+
+.new-here-steps {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+  max-width: 65ch;
+}
+
+.new-here-steps li + li {
+  margin-top: 0.65rem;
+}
+
+.new-here-meetings {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.new-here-meeting {
+  padding: 1rem 1.1rem;
+  border-radius: 0.85rem;
+  border: 1px solid #ecd8de;
+  background: #faf0f3;
+}
+
+.new-here-meeting h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.new-here-meeting p {
+  margin: 0 0 0.5rem;
+  max-width: 65ch;
+}
+
+.new-here-meeting-day {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.new-here-meeting-meta {
+  font-size: 0.95rem;
+  color: #99674a;
+}
+
+.new-here-meeting-after {
+  font-size: 0.95rem;
+  color: #99674a;
+  margin-bottom: 0.75rem !important;
+}
+
+.new-here-inline-link {
+  margin: 2rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ecd8de;
+}
+
+.new-here-inline-link a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.new-here-inline-link a:hover {
+  text-decoration: underline;
+}
+
+.new-here-list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.2rem;
+  max-width: 65ch;
+}
+
+.new-here-list-positive li::marker {
+  content: "✓ ";
+}
+
+.new-here-aside {
+  margin: 1rem 0 0;
+  max-width: 65ch;
+  color: #99674a;
+  font-size: 0.95rem;
+}
+
+.new-here-section-intro {
+  margin: 0 0 1rem;
+  color: #99674a;
+  max-width: 50ch;
+}
+
+.card-new-here-cta {
+  text-align: center;
+}
+
+.card-new-here-cta h2 {
+  margin-top: 0;
+}
+
+.card-new-here-cta p {
+  max-width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.new-here-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.new-here-cta-after {
+  width: 100%;
+  padding-top: 1.75rem;
+  text-align: center;
+}
+
+.new-here-cta-after p {
+  margin: 0 auto;
+  max-width: 50ch;
+  color: #99674a;
+}
+
+.new-here-cta-after a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.new-here-cta-after a:hover {
   text-decoration: underline;
 }
 
