@@ -7,14 +7,21 @@ const mapsEmbed = (query) =>
 const mapsEmbedCoords = (lat, lng, zoom = 17) =>
   `https://maps.google.com/maps?q=${lat},${lng}&hl=de&z=${zoom}&output=embed`;
 
+const mondayGeo = { lat: 49.000659, lng: 8.371768 };
+
 export const runs = [
   {
     id: "monday",
     title: "Slow Monday Runs",
     day: "Montags, 18 Uhr & 19 Uhr",
+    // ISO-Wochentag (1 = Montag … 7 = Sonntag) und Uhrzeiten fürs JSON-LD-Eventschema, siehe eventSchema.js
+    weekday: 1,
+    startTime: "18:00",
+    endTime: "19:30",
     meetingPoint: "Günther-Klotz-Anlage beim Bootsverleih zwischen den beiden Seen",
     mapsUrl: "https://maps.app.goo.gl/TVjQC77kwpGDuCZE7?g_st=ic",
-    mapsEmbedUrl: mapsEmbedCoords(49.000659, 8.371768),
+    mapsEmbedUrl: mapsEmbedCoords(mondayGeo.lat, mondayGeo.lng),
+    geo: mondayGeo,
     distance: "3,5 km",
     groups: [
       {
@@ -33,6 +40,9 @@ export const runs = [
     id: "saturday",
     title: "Slow Saturday Long Run",
     day: "Samstags, 10 Uhr",
+    weekday: 6,
+    startTime: "10:00",
+    endTime: "12:00",
     meetingPoint: "Café Nello, Karlsruhe",
     mapsUrl: mapsSearch("Café Nello Karlsruhe"),
     mapsEmbedUrl: mapsEmbed("Café Nello Karlsruhe"),

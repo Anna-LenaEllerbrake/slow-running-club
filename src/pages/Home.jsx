@@ -1,3 +1,4 @@
+import { useEffect } from "preact/hooks";
 import { Link } from "preact-router/match";
 import {
   contactEmail,
@@ -7,6 +8,7 @@ import {
   stravaLabel,
   stravaUrl,
 } from "../config.js";
+import { buildRunEventSchema } from "../eventSchema.js";
 import FaqList from "../FaqList.jsx";
 import { faqHomePreviewCount } from "../faq.js";
 import InstagramIcon from "../InstagramIcon.jsx";
@@ -14,6 +16,22 @@ import StravaIcon from "../StravaIcon.jsx";
 import { runs } from "../runs.js";
 
 export default function Home() {
+  useEffect(() => {
+    const schema = {
+      "@context": "https://schema.org",
+      "@graph": buildRunEventSchema(),
+    };
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "events-jsonld";
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+
+    return () => {
+      document.getElementById("events-jsonld")?.remove();
+    };
+  }, []);
+
   return (
     <>
       <header className="hero">

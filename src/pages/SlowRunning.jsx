@@ -1,5 +1,5 @@
-import { useEffect } from "preact/hooks";
 import { Link } from "preact-router/match";
+import { useDocumentTitle } from "../useDocumentTitle.js";
 
 const myths = [
   {
@@ -71,13 +71,7 @@ const principles = [
 ];
 
 export default function SlowRunning() {
-  useEffect(() => {
-    document.title = "Was ist Slow Running? | Slow Running Club Karlsruhe";
-    return () => {
-      document.title =
-        "Slow Running Club Karlsruhe | Entspannt laufen in der Gruppe";
-    };
-  }, []);
+  useDocumentTitle("Was ist Slow Running?");
 
   return (
     <main className="container legal-page manifest-page">

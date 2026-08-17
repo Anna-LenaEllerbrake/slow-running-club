@@ -1,14 +1,9 @@
-import { useEffect } from "preact/hooks";
 import { Link } from "preact-router/match";
 import { contactEmail, legal } from "../config.js";
+import { useDocumentTitle } from "../useDocumentTitle.js";
 
 export default function Impressum() {
-  useEffect(() => {
-    document.title = "Impressum | Slow Running Club Karlsruhe";
-    return () => {
-      document.title = "Slow Running Club Karlsruhe | Entspannt laufen in der Gruppe";
-    };
-  }, []);
+  useDocumentTitle("Impressum");
   return (
     <main className="container legal-page">
       <p className="legal-back">

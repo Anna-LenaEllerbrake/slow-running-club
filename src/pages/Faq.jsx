@@ -2,10 +2,12 @@ import { useEffect } from "preact/hooks";
 import { Link } from "preact-router/match";
 import FaqList from "../FaqList.jsx";
 import { faqItems } from "../faq.js";
+import { useDocumentTitle } from "../useDocumentTitle.js";
 
 export default function Faq() {
+  useDocumentTitle("FAQ");
+
   useEffect(() => {
-    document.title = "FAQ | Slow Running Club Karlsruhe";
     const schema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -25,8 +27,6 @@ export default function Faq() {
     document.head.appendChild(script);
 
     return () => {
-      document.title =
-        "Slow Running Club Karlsruhe | Entspannt laufen in der Gruppe";
       document.getElementById("faq-jsonld")?.remove();
     };
   }, []);

@@ -1,15 +1,9 @@
-import { useEffect } from "preact/hooks";
 import { Link } from "preact-router/match";
 import { contactEmail, legal } from "../config.js";
+import { useDocumentTitle } from "../useDocumentTitle.js";
 
 export default function Datenschutz() {
-  useEffect(() => {
-    document.title = "Datenschutz | Slow Running Club Karlsruhe";
-    return () => {
-      document.title =
-        "Slow Running Club Karlsruhe | Entspannt laufen in der Gruppe";
-    };
-  }, []);
+  useDocumentTitle("Datenschutz");
 
   return (
     <main className="container legal-page">

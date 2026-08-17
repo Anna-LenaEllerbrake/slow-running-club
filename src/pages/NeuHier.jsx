@@ -1,8 +1,8 @@
-import { useEffect } from "preact/hooks";
 import { Link } from "preact-router/match";
 import FaqList from "../FaqList.jsx";
 import { newcomerConcerns } from "../newcomerConcerns.js";
 import { runs } from "../runs.js";
+import { useDocumentTitle } from "../useDocumentTitle.js";
 
 const runSteps = [
   "Zur angegebenen Uhrzeit am Treffpunkt sein — einfach kommen, ohne Anmeldung.",
@@ -30,13 +30,7 @@ const notRequired = [
 ];
 
 export default function NeuHier() {
-  useEffect(() => {
-    document.title = "Neu hier? | Slow Running Club Karlsruhe";
-    return () => {
-      document.title =
-        "Slow Running Club Karlsruhe | Entspannt laufen in der Gruppe";
-    };
-  }, []);
+  useDocumentTitle("Neu hier?");
 
   return (
     <main className="container legal-page new-here-page">
