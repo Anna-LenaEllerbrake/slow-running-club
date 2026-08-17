@@ -20,11 +20,10 @@ export default function Home() {
         <div className="container">
           <img
             className="logo"
-            src="/logo.png"
+            src="/logo.svg"
             alt="Slow Running Club Karlsruhe Logo"
           />
-          <p className="eyebrow">Karlsruhe</p>
-          <h1>Slow Running Club</h1>
+          <h1 className="sr-only">Slow Running Club Karlsruhe</h1>
           <p className="lead">
             Locker laufen, gemeinsam dranbleiben — ganz ohne Leistungsdruck.
           </p>
