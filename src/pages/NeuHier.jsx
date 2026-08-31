@@ -1,6 +1,8 @@
 import { Link } from "preact-router/match";
 import FaqList from "../FaqList.jsx";
 import { newcomerConcerns } from "../newcomerConcerns.js";
+import PhotoSlot from "../PhotoSlot.jsx";
+import { neuHierPhoto } from "../photos.js";
 import { runs } from "../runs.js";
 import { useDocumentTitle } from "../useDocumentTitle.js";
 
@@ -46,6 +48,8 @@ export default function NeuHier() {
           und ohne Druck. Keine Anmeldung nötig.
         </p>
       </section>
+
+      <PhotoSlot {...neuHierPhoto} aspect="16 / 9" />
 
       <section className="card">
         <h2>So läuft ein Run ab</h2>

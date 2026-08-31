@@ -1,4 +1,6 @@
 import { Link } from "preact-router/match";
+import PhotoSlot from "../PhotoSlot.jsx";
+import { slowRunningPhoto } from "../photos.js";
 import { useDocumentTitle } from "../useDocumentTitle.js";
 
 const myths = [
@@ -93,6 +95,8 @@ export default function SlowRunning() {
           Gegenteil der Fall.
         </p>
       </section>
+
+      <PhotoSlot {...slowRunningPhoto} aspect="16 / 9" />
 
       <section className="card">
         <h2>Das denken viele — und so ist es wirklich</h2>

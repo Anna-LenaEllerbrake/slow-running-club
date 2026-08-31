@@ -12,6 +12,8 @@ import { buildRunEventSchema } from "../eventSchema.js";
 import FaqList from "../FaqList.jsx";
 import { faqHomePreviewCount } from "../faq.js";
 import InstagramIcon from "../InstagramIcon.jsx";
+import PhotoSlot from "../PhotoSlot.jsx";
+import { heroPhoto, homeGalleryPhotos } from "../photos.js";
 import StravaIcon from "../StravaIcon.jsx";
 import { runs } from "../runs.js";
 
@@ -56,10 +58,32 @@ export default function Home() {
               Was ist Slow Running?
             </Link>
           </div>
+          <PhotoSlot
+            {...heroPhoto}
+            aspect="16 / 9"
+            className="hero-photo"
+          />
         </div>
       </header>
 
       <main className="container">
+        <section className="card">
+          <h2>
+            <span className="section-emoji" aria-hidden="true">
+              📸
+            </span>{" "}
+            Impressionen
+          </h2>
+          <p className="card-gallery-intro">
+            Ein paar Eindrücke von unseren Läufen — mehr gibt's auf Instagram.
+          </p>
+          <div className="photo-gallery">
+            {homeGalleryPhotos.map((photo) => (
+              <PhotoSlot key={photo.id} {...photo} aspect="1 / 1" />
+            ))}
+          </div>
+        </section>
+
         <section className="card card-runs" id="laeufe">
           <h2>
             <span className="runs-heading-emoji" aria-hidden="true">
